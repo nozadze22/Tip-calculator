@@ -1,0 +1,58 @@
+$app-background: #f4f4f4;
+$primary-color: #4CAF50;
+$secondary-color: #fff;
+$error-color: #f44336;
+$font-family: 'Arial', sans-serif;
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $app-background;
+  padding: 20px;
+}
+
+.calculatot {
+  background-color: $secondary-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+
+  h4 {
+    margin: 10px 0;
+    font-family: $font-family;
+    color: black
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .error {
+    color: $error-color;
+    font-weight: bold;
+  }
+}
